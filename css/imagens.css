@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.barra-header-imagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+    background-color: var(--gray2);
+    color: var(--white);
+}
+
+.album-img{
+    display: flex;
+    width: 76%;
+    background-color: rgba(0, 0, 0, 1)
+    padding: 1rem;
+}
+
+.album-img span{
+    top: 14rem;
+}
+
+.album-img li:hover{
+   transform: scale(1.2);
+}
+
+.img1{  
+    background-image: url("../img/autoclave.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img2{
+    background-color: brown;
+    background-image: url("../img/autoclave02.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img3{
+    background-image: url("../img/autoclave01.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img4{
+    background-color: brown;
+    background-image: url("../img/img_jardim.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img5{
+    background-image: url("../img/img_natalia_mariah.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img6{
+    background-color: brown;
+    background-image: url("../img/foto_be01.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img6{
+    background-color: brown;
+    background-image: url("../img/foto_be01.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.img7{
+    background-color: brown;
+    background-image: url("../img/serra_01.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30rem 20rem;
+}
+
+.album-img ul{
+    list-style: none;
+}
+
+.album-img ul li{
+    float: left;
+    width: 30rem;
+    height: 20rem;
+    right: 1rem;
+    border: 0.3rem solid #ddd;
+    box-shadow: 0rem 0rem 0.8rem #555;
+    background-color: lightslategrey;
+    margin: 1rem;
+    transition: all 0.3s;
+    
+}
+
+.album-img li span{
+    opacity: 0;
+}
+
+.album-img li:hover span{
+    position: relative;
+    opacity: 1;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+@media (max-width: 45rem){
+    .barra-header-imagens{
+        width: 100%;
+        height: 3rem;
+    }
+
+    .album-img{
+        width: 99%;
+        margin: 0 auto;
+    }
+
+    .album-img li span{
+        opacity: 1;
+        position: relative;
+        top: 14rem;
+        opacity: 1;
+        font-size: 1.2rem;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #fff;
+    }
+
+    .album-img li:hover{
+        transform: scale(1);
+     }
+
+     .album-img{
+        width: 90%;
+    }
+}

@@ -1,0 +1,69 @@
+@charset "utf-8";
+
+.barra-header-corpoclinico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 2rem;
+    background-color: rgb(70, 86, 67);
+    box-shadow: 0px 0px 5px #777;
+    color: var(--white);
+}
+
+article.corpo-clinico {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 10px var(--gray2);
+    margin: 1rem auto;
+    padding: 3rem;
+}
+
+.corpo-clinico h1{
+    font-size: 1.8rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    padding: 1rem;
+    background-color: #555;
+    border-radius: 0.5rem;
+    color: #fff;
+}
+
+article.corpo-clinico h3{
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    background-color: rgb(210, 235, 221);
+    border-radius: 0.5rem;
+    color: rgb(88, 179, 115);
+}
+
+p{
+    color: var(--black);
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    color: #555;
+}
+
+@media(max-width: 45rem){
+    
+    .barra-header-corpoclinico{
+        width: 99%;
+        height: 4rem;
+        margin: 0 -0.5rem 0.5rem;
+    }
+    
+    article.corpo-clinico {
+        width: 99%;
+        margin: 0 -5px;
+        padding: 0rem;
+    }
+
+    .corpo-clinico h1{
+        font-size: 11pt;
+        text-align: center;
+        margin: 0 auto;
+    }
+}

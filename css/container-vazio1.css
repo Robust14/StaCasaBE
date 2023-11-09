@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.box-text-inf5{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    border: 0px solid #000;
+}
+
+.h-camp-cafe{
+    color: brown;
+}
+
+.s-camp-cafe{
+    color: brown;
+    font-size: 1.5rem;
+}
+
+.h-camp-saae{
+    color: rgb(42, 99, 165);
+}
+
+.s-camp-saae{
+    color: rgb(42, 99, 165);
+    font-size: 1.5rem;
+}
+
+.logo-cafe{
+    float: left;
+    width: 12rem;
+    height: 8rem;
+    background-position: 100%;
+    background-size: 100%;
+    background-image: url("../img/cafe2-logo.jpg");
+    background-repeat: no-repeat;
+    box-shadow: 0.2rem 0.2rem 0.5rem #000;
+    margin: 1rem;
+}
+
+.logo-saae{
+    float: left;
+    width: 12rem;
+    height: 8rem;
+    background-position: 100%;
+    background-size: 80%;
+    background-color: #ccc;
+    background-image: url("../img/saae-logo.png");
+    background-repeat: no-repeat;
+    box-shadow: 0.1rem 0.1rem 0.5rem #000;
+    margin: 1rem;
+}
+
+article.a3 h2{
+    font-size: 1.6rem;
+}
+
+article.a3 ul{
+    list-style: none;
+}
+
+article.a3 ul li{
+    font-size: 1.4rem;
+    display: block;
+}
+
+article.div-text-inf4 h2{
+    font-size: 1.5rem;
+    color: #999;
+}
+
+article.div-text-inf4 .p1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #315f35;
+}
+
+article.div-text-inf4 .p2{
+    font-size: 1.2rem;
+    color: #555;
+}

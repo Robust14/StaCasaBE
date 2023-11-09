@@ -1,0 +1,551 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: tahoma;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.box-logo1{
+    width: 7rem;
+    height: 7rem;
+    background-position: 50% 50%;
+    background-size: 80%;
+    background-image: url("../img/logomarca03.png");
+    background-repeat: no-repeat;
+    background-color: #bbb;
+    border-radius: 1rem;
+}
+
+.titulo{
+    position: relative;
+    width: 90%;
+    top: 1rem;
+    left: 0rem;
+    font-family: tahoma;
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    color: rgb(168, 47, 47);
+}
+
+.titulo2{
+    position: relative;
+    width: 90%;
+    top: -0.1rem;
+    left: 0rem;
+    font-family: tahoma;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    color: rgb(50,50,50);
+}
+
+.menu{
+    position: fixed;
+    font-size: 1.5rem;
+    font-family: tahoma;
+    background: #fff;
+    background-color: rgb(50,50,50);
+    width: 100%;
+    height: 5vh;
+    color: var(--white);
+    right: 0rem;
+    top: 0rem;
+    z-index: 3; 
+}
+
+.menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh;
+    gap: 0.5rem;
+    top: 0rem;
+    right: 10rem;
+    list-style: none;
+}
+
+.menu ul li{
+    display: inline;
+}
+
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.menu a:hover{
+    color: #00ccff;
+    border-bottom: 0.2rem solid #00ccff;
+}
+
+
+.menu-mobile{
+    display: none;
+    position: fixed;
+    font-size: 1.5rem;
+    font-family: tahoma;
+    background-color: rgb(50,50,50);
+    color: var(--white);
+    right: 0rem;
+    top: 0rem;
+    z-index: 1; 
+}
+
+.menu-mobile ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.box-foto-inicio{
+    margin: 0rem;
+    width: 100%;
+    height: 100%;
+    background-position: 100%;
+    background-size: 100%;
+    background-image: url("../img/img2_santacasa_cort.jpg");
+    background-repeat: no-repeat;
+    background-color: #777;
+}
+
+.div-capa{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0rem;
+    left: 0rem;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0.8),rgba(166, 255, 166, 0.4));
+    padding: 3rem;
+}
+
+article.a1{
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    width: 20%;
+    height: 77%;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    font-family: monospace;
+    padding: 2rem;
+    text-align: justify;
+    color: var(--white);
+}
+
+article.a2{
+    position: absolute;
+    top: 0rem;
+    right: 6rem;
+    width: 50%;
+    background-color: rgba(151, 187, 211, 0.8);
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: justify;
+    margin: 1rem;
+    color: black;
+}
+
+.a2 span{
+    font-size: 1.3rem;
+}
+
+.a3{
+    position: relative;
+    top: 0rem;
+    left: auto;
+    width: 30%;
+    background: var(--gray1);
+    border-left: 0.3rem solid var(--gray2);
+    font-size: 1.5rem;
+    padding: 3rem;
+    margin: 3rem;
+    flex-wrap: wrap;
+    color: var(--gray2);
+}
+
+.div-text-inf4{
+    position: relative;
+    top: 0rem;
+    left: auto;
+    width: 40%;
+    background-color: rgba(152, 230, 187, 0.8);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 3rem;
+    margin: 3rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.div-text-inf5{
+    position: relative;
+    top: 0rem;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 3rem;
+    margin-top: 3rem;
+    text-align: justify;
+    flex-wrap: wrap;
+    box-shadow: 0 0 0.8rem #777;
+}
+
+.div-text-inf6{
+    position: relative;
+    top: 0rem;
+    left: auto;
+    width: 20%;
+    background-color: rgba(182, 224, 252, 0.8);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 3rem;
+    margin: 3rem;
+    text-align: justify;
+    flex-wrap: wrap;
+}
+
+h1{
+    margin-left: 1rem;
+}
+
+/*===========================*/
+
+.container-main{
+    display: flexbox;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.item{
+    display: flex;
+    align-items: flex-start;
+    width: 97%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(171, 156, 236);
+    color: var(--white);
+}
+
+.item:nth-child(1){ /*Top*/
+    text-align: center;
+    background: #fff;
+    width: 99%;
+    height: 5vh;
+}
+
+.item:nth-child(2){ /*Header*/
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: #fff;
+    width: 98.5%;
+    height: 7rem;
+    padding: 1rem;
+}
+
+.item:nth-child(3){ /*Início*/
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 83vh;
+    padding: 0rem;
+    overflow: hidden;
+}
+
+.item:nth-child(4){ /*Vazio*/
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    width: 99%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.item:nth-child(5){ /*Corpo Clínico*/
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    flex-direction: column;
+    width: 99%;
+    height: 100%;
+}
+
+.item:nth-child(6){ /*Imagens*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);
+    background: linear-gradient(90deg,rgb(110, 155, 160),rgb(193, 214, 220),rgb(110, 155, 160));
+    border: 1px solid var(--blue1);
+    border-radius: 1rem;
+    width: 99%;
+    height: 100%;
+    padding: 0rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.item:nth-child(7){ /*Dicas de Saúde*/
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    height: 100%;
+    padding: 0rem;
+    background-color: var(--green);
+}
+
+.item:nth-child(8){ /*Sub-Footer*/
+    position: relative;
+    padding: 2.5rem;
+    width: 96%;
+    height: 100%;
+    background-color: var(--gray2);
+    border-bottom: 0.3rem solid var(--gray2);
+    font-size: 1.5rem;
+}
+
+.item:nth-child(9){ /*Footer*/
+    position: relative;
+    padding: 2.5rem;
+    width: 96%;
+    height: 100%;
+    background-color: var(--black);
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+.close-menu{
+    position: fixed;
+    display: none;
+}
+
+@media (max-width: 45rem){
+
+    .item:nth-child(1){ /*Top*/
+        width: 99%;
+        height: 0vh;
+    }
+
+    .item:nth-child(2){ /*Header*/
+        width: 90%;
+        height: 8vh;
+    }
+
+    .item:nth-child(3){ /*Início*/
+        height: auto;
+        display: block;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .div-capa{
+        width: 98%;
+    }
+
+    .box-logo1{
+        width: 5.5rem;
+        height: 5.5rem;
+        background-position: 50% 50%;
+        background-size: 60%;
+        background-image: url("../img/logomarca03.png");
+        background-repeat: no-repeat;
+        background-color: #bbb;
+        border-radius: 1rem;
+    }
+    
+    .titulo{
+        position: relative;
+        width: 90%;
+        top: 0rem;
+        left: 0rem;
+        font-family: tahoma;
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 0.5rem;
+        color: rgb(168, 47, 47);
+    }
+    
+    .titulo2{
+        position: relative;
+        width: 90%;
+        top: -0.1rem;
+        left: 6rem;
+        font-family: tahoma;
+        font-size: 1.2rem;
+        padding: 0.5rem;
+        color: rgb(50,50,50);
+    }
+
+    .box-foto-inicio{
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background-position: 100%;
+        background-size: 100%;
+        background-image: url("../img/img2_santacasa_cort.jpg");
+        background-repeat: no-repeat;
+        background-color: #777;
+    }
+    
+    .div-capa{
+        position: relative;
+        width: 100%;
+        height: auto;
+        top: 0rem;
+        left: -3rem;
+        background: linear-gradient(90deg,rgba(0, 0, 0, 0.8),rgba(166, 255, 166, 0.4));
+        padding: 3rem;
+    }
+
+    article.a1{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        font-family: monospace;
+        padding: 2rem;
+    }
+    
+    article.a2{
+        position: relative;
+        width: 100%;
+        height: auto;
+        background-color: rgba(151, 187, 211, 0.8);
+        padding: 2rem;
+        margin: 3rem;
+    }
+
+    .item:nth-child(4){ /*Vazio*/
+        display: block;
+        width: 98.5%;
+        padding: 1rem;
+    }
+
+    article.div-text-inf3 h2{
+        font-size: 1.4rem;
+    }
+
+    article.div-text-inf3 ul li{
+        font-size: 1.2rem;
+    }
+
+    article.a3{
+        width: 58%;
+        margin: 3rem 4rem;
+    }
+
+    .div-text-inf4{
+        position: relative;
+        top: 0rem;
+        left: -1rem;
+        width: 75%;
+        background-color: rgba(152, 230, 187, 0.8);
+        font-size: 1rem;
+        padding: 2rem;
+    }
+
+    .div-text-inf5{
+        position: relative;
+        top: 0rem;
+        width: 80%;
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 3rem;
+        margin-right: 1.5rem;
+    }
+
+    .item:nth-child(5){ /*Corpo Clínico*/
+        display: block;
+        width: 98%;
+        padding: 1rem;
+    }
+    
+    
+    article.a1{
+        position: relative;
+        display: block;
+        flex-direction: column;
+        width: 84%;
+        height: auto;
+    }
+    
+    article.a2{
+        position: relative;
+        display: block;
+        flex-direction: column;
+        top: 2rem;
+        left: -2rem;
+        width: 83.5%;
+        height: auto;
+    }
+    
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+        display: inline;
+        width: 40%;
+        height: 100vh;
+        text-align: center;
+        padding: 0rem;
+        bottom: 0px;
+    }
+    
+    .menu-mobile ul{
+       flex-direction: column;
+       justify-content: center;
+    }
+
+    .menu-mobile a{
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .menu-mobile a:hover{
+        font-size: 1.2rem;
+        border-bottom: 0.1rem solid #00ccff;
+        color: #00ccff;
+    }
+
+    .menu-mobile{
+        display: none;
+    }
+
+    .close-menu-label::after{
+        content: '☰';
+        position: fixed;
+        text-align: center;
+        font-size: 1.5rem;
+        top: 1.2rem;
+        right: 1rem;
+        background-color:  #522323;
+        width: 1.2rem;
+        padding: 0.3rem;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .close-menu:checked~.menu-mobile{
+        display: block;
+    }
+
+    .close-menu:checked~.close-menu-label::after{
+        content: '✕';
+    }
+
+    h1{
+        font-size: 14pt;
+    }
+}

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+:root{
+    --white: #fff;
+    --green1: #0f0;
+    --green2: #94ca94;
+    --green3: #3a663a;
+    --green4: #2b502b;
+    --blue: #bdeafc;
+    --blue1: #82cdf8;
+    --blue2: #3299d4;
+    --blue3: #2e5a74;
+    --gray:#ddd;
+    --gray1:#ccc;
+    --gray2:#555;
+    --gray3:#333;
+    --black:#000;
+    --red1:red;
+    --red2:#ad2f2f;
+    --red3:#962929;
+}
